@@ -1,0 +1,11 @@
+[
+    {
+        "id":1,
+        "productId":1,
+        "author": "Blake G.",
+        "rating": 4,
+        "date": "2025-03-12",
+        "title": "Great starter PC",
+        "body": "Runs basic games with no problem. Best PC to start off with."
+    }
+]

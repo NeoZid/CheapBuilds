@@ -1,0 +1,16 @@
+[
+    {
+        "id": "prebuilt-desktop",
+        "name": "Pre-built Desktops",
+        "description": "Ready to game PCs that are built and optimized for gaming of any price range.",
+        "image": "images/categories/desktops.jpg",
+        "productCount":7
+    },
+    {
+        "id": "gaming-laptop",
+        "name": "Gaming Laptops",
+        "description": "Portable gaming laptops that is cheaper than a piece of candy!",
+        "image": "images/categories/laptops.jpg",
+        "productCount":7
+    }
+]

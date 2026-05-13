@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "CheapBuild Starter",
+        "category": "prebuilt-desktop",
+        "price": 421.99,
+        "sku": "CB-DSK-001",
+        "availability": "In Stock",
+        "image": "images/products/starter-rig.jpg",
+        "description": "The perfect starter PC to get into PC Gaming. Handles popular games such as Minecraft, Fortnite, League of Legends and Valorant with ease.",
+        "specs": {
+            "cpu": "AMD Ryzen 3 4100",
+            "gpu": "NVIDIA GTX 1650",
+            "ram": "8GB DDR4",
+            "storage": "256GB SSD",
+            "os": "Windows 11 Home"
+        },
+        "featured": false,
+        "rating": 3.8
+    }
+
+]
