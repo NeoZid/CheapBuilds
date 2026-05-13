@@ -3,9 +3,8 @@
 fetch('./data/products.json')
     .then(response => response.json())
     .then(products => {
-        const featured = products.filter(product => product.featured == true)
-        const grid = document.getElementById('featured-grid');
-        featured.forEach(product => {
+        const grid = document.getElementById('product-list-grid');
+        products.forEach(product => {
             grid.innerHTML += ` 
                 <div class="product-card">
                     <img src="${product.image}" alt="${product.name}">
