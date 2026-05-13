@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheapBuilds || Checkout</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/checkout.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+    <header>
+        <a href="./index.html" class="homePageHeader">CheapBuilds</a>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="./login.html">Login/Account</a></li>
+            </ul>
+        </nav>
+
+        <form action="#" method="GET">
+            <label for="product-search"></label>
+            <input type="search" id="product-search" name="q" placeholder="Search the products">
+            <button type="submit">Search</button>
+        </form>
+
+        <div class="cart-wrapper">
+            <a href="./cart.html">
+                <img src="./images/main/cartIcon.png" class="cartImage" alt="Cart">
+            </a>
+            <span id="cart-count">0</span>
+        </div>
+
+        <a href="./login.html">
+            <img src="" alt="Account">
+        </a>
+    </header>
+
+<main>
+
+    <section class="checkout-intro">
+        <h1>Checkout</h1>
+        <p>Enter your shipping information below.</p>
+    </section>
+
+    <section class="checkout-section">
+
+        <div id="checkoutFormContainer">
+
+            <form id="checkoutForm">
+
+                <input id="name" type="text" placeholder="Full Name">
+
+                <input id="email" type="email" placeholder="Email">
+
+                <input id="phone" type="text" placeholder="Phone Number">
+
+                <input id="address" type="text" placeholder="Shipping Address">
+
+                <select id="delivery">
+
+                    <option value="">Choose delivery</option>
+
+                    <option value="standard">Standard Delivery</option>
+
+                    <option value="express">Express Delivery</option>
+
+                </select>
+
+                <p id="error"></p>
+
+                <button type="submit">Place Order</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="./products.html">PreBuilt Gaming PCs</a></li>
+                    <li><a href="./products.html">Gaming Laptops</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact us</h3>
+                <p>support@cheapbuilds.com</p>
+                <p>123-123-1234</p>
+                <p>321 Rue Cheap, Montreal, QC</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Newsletter and Socials</h3>
+
+                <div class="newsletter-social">
+                    <div class="newsletter">
+                        <input type="email" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </div>
+
+                    <div class="socials">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-x-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
