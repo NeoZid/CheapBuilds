@@ -7,12 +7,15 @@ header {
     padding: 15px 40px;
     align-items: center;
     font-size: 16px;
+    
 }
+
+
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 50px;
 }
 
 nav a {
@@ -30,6 +33,7 @@ button {
     display: inline-block;
 }
 
+
 .cart-wrapper span {
     position: absolute;
     top: -8px;
@@ -46,11 +50,7 @@ button {
     text-decoration: none;
 }
 
-.cartImage {
-    width: 50px;
-    height: 50px;
-    filter: invert(1);
-}
+
 
 
 /*---- MAIN CSS ----*/
@@ -71,6 +71,16 @@ body {
     background: linear-gradient(rgb(76, 0, 255), rgb(7, 1, 94));
 }
 
+.hero a {
+    background-color: #ffffff;
+    color: #7c3aed;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
 main {
     flex: 1;
 }
@@ -86,15 +96,55 @@ main p {
     color: whitesmoke;
 }
 
-.hero a {
-    background-color: #ffffff;
-    color: #7c3aed;
-    padding: 12px 30px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 20px;
+/*---FEATUERD PRODUCTS*/
+.featured-products {
+    padding: 60px 40px;
+    color: #ffffff;
 }
+
+.featured-products h2{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+#featured-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #13132b;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product-card h3, p{
+    font-size: 16px;
+    text-align: center;
+}
+
+.product-card a {
+    background-color: #7c3aed;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+
 
 
 
@@ -117,8 +167,17 @@ footer a {
     padding: 40px;
 }
 
+
+
 footer ul {
     list-style: none;
+    padding: 4px 6px;
+    
+}
+footer ul li {
+    list-style: none;
+    padding: 20px;
+    
 }
 
 footer h3 {

@@ -15,8 +15,27 @@
             "storage": "256GB SSD",
             "os": "Windows 11 Home"
         },
-        "featured": false,
+        "featured": true,
         "rating": 3.8
+    },
+    {
+        "id": 2,
+        "name": "CheapBuild Not-so-cheap PC",
+        "category": "prebuilt-desktop",
+        "price": 4200.99,
+        "sku": "CB-DSK-005",
+        "availability": "In Stock",
+        "image": "images/products/not-so-cheap.jpg",
+        "description": "The not so cheap computer build you're looking for, idk what ur doing here but here it is.",
+        "specs": {
+            "cpu": "Intel Core Ultra 7 265KF",
+            "gpu": "NVIDIA GTX 5080(16GB)",
+            "ram": "32GB DDR5",
+            "storage": "2TB SSD",
+            "os": "Windows 11 Home"
+        },
+        "featured": true,
+        "rating": 4.1
     }
 
 ]
