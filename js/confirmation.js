@@ -21,3 +21,14 @@ if(cartCookie){
     cartSummary.innerHTML += "<h3>Total: $" + total.toFixed(2) + "</h3>";
 
 }
+let confirmButton = document.getElementById("confirmButton");
+
+confirmButton.addEventListener("click", function(){
+
+    document.cookie = "cart=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+    alert("Order Confirmed!");
+
+    document.location = "index.html";
+
+});
