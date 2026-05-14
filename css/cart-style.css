@@ -68,6 +68,7 @@ main {
     padding: 20px;
     height: fit-content;
     position: sticky;
+    text-align: center;
 }
 
 #cart-summary button {
