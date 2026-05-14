@@ -29,7 +29,7 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
             method: 'POST', 
             headers: {
                 'Content-Type': 'application/json',
-                'Accept': 'application/json'
+                'x-api-key': 'free_user_3Djgl5yLWVGt09qL5z1QEcj2gky'
             },
             body: JSON.stringify({
                 email: email,
