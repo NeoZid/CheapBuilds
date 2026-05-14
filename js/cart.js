@@ -21,12 +21,12 @@ function readCookie(name) {
     }
 }
 
-/*
+
 const user = readCookie('user');
 if (!user || !user.token) {
     alert('Must be logged in to see cart');
     window.location.href='login.html';
-} */
+} 
 
 updateCartCount();
 

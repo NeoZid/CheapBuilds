@@ -48,10 +48,10 @@ fetch('./data/products.json')
 
         const user = readCookie('user');
 
-        /* if (!user || !user.token) {
+         if (!user || !user.token) {
             alert('Must be logged in to see products');
             window.location.href='login.html';
-        } */
+        } 
 
         document.getElementById('add-to-cart').addEventListener('click', () => {
             const cart = readCookie('cart');
