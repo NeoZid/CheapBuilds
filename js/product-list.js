@@ -1,5 +1,7 @@
 // fetch dynamically gets the data from the json file
 
+
+
 fetch('./data/products.json')
     .then(response => response.json())
     .then(products => {

@@ -1,0 +1,39 @@
+body {
+    background: linear-gradient(rgb(119, 119, 126), rgb(7, 1, 94));
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* <-- makes the body full screen */ 
+    
+    
+}
+
+.login-container {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-container h1 {
+    font-size: 42px;
+}
+
+#login-form {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+#login-form input {
+    padding: 10px;
+    width: 100%;
+}
+
+#login-form button {
+    padding: 10px;
+    cursor: pointer;
+}
