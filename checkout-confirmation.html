@@ -7,7 +7,9 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/confirmation.js" defer></script>
+   <link rel="stylesheet" href="./css/checkout-confirmation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <script src="./js/confirmation.js" defer></script>
     <script src="./js/shared.js" defer></script>
 </head>
 <body>
@@ -50,18 +52,14 @@
 
             <h2>Order Summary</h2>
 
-            <div class="order-summary">
-                <p>Gaming PC - $899.99</p>
-                <p>Delivery: Standard</p>
-                <p>Total: $899.99</p>
-            </div>
-
+             <div id="cartSummary"></div>
             <button id="confirmButton">Confirm Order</button>
 
             <br><br>
 
             <a href="./index.html" class="return-home">Return to Home</a>
-
+            
+          
         </section>
 
     </main>
