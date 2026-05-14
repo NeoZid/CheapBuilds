@@ -151,7 +151,7 @@ main p {
 
 
 
-h1,h2{
+h1,h2,h3{
     color: white;
 }
 
@@ -197,83 +197,5 @@ footer h3 {
 }
 
 
-.checkout-intro {
-    text-align: center;
-
-    margin-top: 40px;
-
-    margin-bottom: 30px;
-}
-
-.checkout-intro h1 {
-    color: white;
-}
-
-.checkout-intro p {
-    color: white;
-}
-
-.checkout-section {
-    display: flex;
-
-    justify-content: center;
-
-    padding: 40px;
-}
-
-#checkoutFormContainer {
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-}
-
-#checkoutForm {
-    display: flex;
-
-    flex-direction: column;
-}
-
-#name,
-#email,
-#phone,
-#address {
-    width: 300px;
-
-    margin-bottom: 10px;
-
-    padding: 10px;
 
 
-
-    background-color: white;
-
-    border: 1px solid white;
-
-    border-radius: 5px;
-}
-
-
-
-#checkoutForm button {
-    width: 323px;
-
-    padding: 15px;
-
-    font-size: 18px;
-
-    border-radius: 5px;
-}
-
-#error {
-    color: white;
-}
-.confirmation-section {
-    text-align: center;
-    padding: 80px 40px;
-}
-
-.return-home {
-    color: white;
-}
