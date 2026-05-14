@@ -1,0 +1,32 @@
+.profile-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.profile-section p,
+.profile-section h1,
+.profile-section h2 {
+    color: white;
+}
+
+.profile-form input {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-form button {
+    width: 323px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
