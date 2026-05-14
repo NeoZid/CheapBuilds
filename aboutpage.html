@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheapBuilds || About</title>
+    <link rel="stylesheet" href="./css/aboutpage-style.css">
+    <script src="./js/main.js" defer></script> <!-- defer: loads after html is done loading-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="./js/cart.js" defer></script>
+    <script src="./js/shared.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="./index.html" class="homePageHeader">CheapBuilds</a>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./product-listing.html">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Login/Account</a></li>
+            </ul>
+        </nav>
+
+        <form action="#" method="GET">
+            <label for="product-search"></label>
+            <input type="search" id="product-search" name="q" placeholder="Search the products">
+            <button type="submit">Search</button>
+        </form>
+
+        <div class="cart-wrapper">
+            <a href="./cart.html"><i class="fas fa-cart-shopping fa-2x"></i></a>
+            <span id="cart-count">0</span> <!-- dynamically changes with JS -->
+            
+        </div>
+
+        <a href="./login.html"><i class="fa-solid fa-user fa-2x"></i></a> <!-- the fa-2x changes the icon size, feature from font awesome-->
+    </header>
+
+
+    <main>
+        <section class="about">
+            <h1> Our company </h1>
+            <p>
+                Cheap builds focuses on providing the best platform for affordable gaming computers.<br>
+                Founded in 2026, it is a new revolutionary concept.<br>
+                The goal of our company is to bring gamers together by providing an eCommerce platform with high-grade gaming computers that <br>
+                are affordable for the general public. <br>
+                We keep our customer's values at heart. <br>
+            <p>
+
+            <div class="team-member">
+                <h3>Neo Zidereck De Guzman-CEO</h3>
+                <p>Neo is the founder of the company and current CEO. </p>
+            </div>
+        
+            <div class="team-member">
+                <h3>Sriiman Visuvanathar-CTO (Chief Technology Officer)</h3>
+                <p>Sriiman worked on this project from the beginning. He fixed numerous issues and kept the company afloat. </p>
+            </div>
+
+            <div class="team-member">
+                <h3>Yves Picicur-CMO (Chief Marketing Officer)</h3>
+                <p>Yves joined the company in the late stage of development. He helped bring out the best of the company with his marketing and promotion skills. </p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form" action="#" method="POST">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="How can we help?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+             </form>
+        </section>
+         
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3> Categories </h3>
+                <ul>
+                    <li><a href="./products.html">PreBuilt Gaming PCs</a></li>
+                    <li><a href="./products.html">Gaming Laptops</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3> Contact us </h3>
+                <p>support@cheapbuilds.com</p>
+                <p>123-123-1234</p>
+                <p>321 Rue Cheap, Montreal, QC</p>
+            </div>  
+            
+            <div class="footer-col">
+                <h3> Newsletter and Socials </h3>
+                <div class="newsletter-social">
+                    <div class="newsletter">
+                        <input type="email" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </div>
+
+                    <div class="socials">
+                        <div class="socials">
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-x-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
