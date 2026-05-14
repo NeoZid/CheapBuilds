@@ -23,11 +23,6 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
     console.log("EMAIL:", email);
     console.log("PASSWORD:", password);
 
-    const loginData = {
-        email: "eve.holt@reqres.in",
-        password: "cityslicka"
-    }
-
     try {
         // we fetch the response from reqres
         const response = await  fetch('https://reqres.in/api/login', {
@@ -36,7 +31,10 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             },
-            body: JSON.stringify(loginData)
+            body: JSON.stringify({
+                email: email,
+                password: password
+            })
         });
 
 
