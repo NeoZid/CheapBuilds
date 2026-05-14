@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/cart-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="./js/cart.js" defer></script>
+    <script src="./js/shared.js defer"></script>
 
 </head>
 
@@ -18,7 +19,7 @@
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="">Products</a></li>
+                <li><a href="./product-listing.html">Products</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Login/Account</a></li>
             </ul>
@@ -39,29 +40,21 @@
         <a href="./login.html"><i class="fa-solid fa-user fa-2x"></i></a> <!-- the fa-2x changes the icon size, feature from font awesome-->
     </header>
 
-
-
-
     <main>
         <section class="cart-section">
             
             <div id="cart-items">
                 <h2> Cart Items </h2>
-
-
             </div>
 
-            <div class="cart-summary">
+            <div id="cart-summary">
                 <h2> Order Summary </h2>
                 <p> Subtotal: <span id="cart-subtotal">$0.00</span></p>
-                <a href="./checkout.html">Proceed to Checkout</a>
+                <button href="./product-listing.html">Continue Shopping</a>
+                <button class="checkout-btn" href="./checkout.html">Proceed to Checkout</button>
             </div>
         </section>
     </main>
-
-
-
-
 
     <footer>
         <div class="footer-container">

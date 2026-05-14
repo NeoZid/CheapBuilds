@@ -1,3 +1,4 @@
+
 document.getElementById("checkoutForm").addEventListener("submit", function(event){
 
     event.preventDefault();

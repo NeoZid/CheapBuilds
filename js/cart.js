@@ -21,6 +21,8 @@ function readCookie(name) {
     }
 }
 
+updateCartCount();
+
 const cart = readCookie('cart');
 const cartItems = document.getElementById('cart-items');
 let subtotal = 0;
@@ -29,18 +31,38 @@ let subtotal = 0;
 if (cart.length==0) {
     cartItems.innerHTML= '<p> Cart is empty </p>';
 } else {
-    cart.forEach(item => {
+    cart.forEach((item, index) => {
         subtotal += item.price;
         cartItems.innerHTML += `
-            <div class="cart-item">
-                <img src="${item.image}" alt="{item.name}">
-                <h3>${item.name}</h3>
-                <p>$${item.price}</p>
-                <button>Remove</button>
-            </div>
+                <div class="item-info">
+                    <img src="${item.image}" alt="${item.name}">
+                    <div class="item-text">
+                        <h3>${item.name}</h3>
+                        <h3>$${item.price}</h3>
+                        <button class="remove-btn" onclick="removeItem(${index})">Remove</button>    
+                    </div>
+                </div>                
         `;
     });
 }
+
+
+function removeItem(index) {
+    const cart = readCookie('cart');
+    cart.splice(index, 1);
+    saveCookie('cart',cart);
+    location.reload();
+}
+
+function updateCartCount(){
+    const cart = readCookie('cart');
+    const cartCountElement = document.getElementById('cart-count');
+
+    if (cartCountElement) {
+        cartCountElement.textContent = cart.length;
+    }
+}
+
 
 
 document.getElementById('cart-subtotal').textContent = `$${subtotal.toFixed(2)}`; // toFixed always makes it a decimal
