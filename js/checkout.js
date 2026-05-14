@@ -5,10 +5,12 @@ let total = 0;
 let cookies = document.cookie.split("; ");
 
 let cartCookie = cookies.find(c => c.startsWith("cart="));
+let cart = [];
 
 if(cartCookie){
 
-    let cart = JSON.parse(cartCookie.split("=")[1]);
+     cart = JSON.parse(cartCookie.split("=")[1]);
+
 
     for(let i = 0; i < cart.length; i++){
 
@@ -31,6 +33,14 @@ document.getElementById("checkoutForm").addEventListener("submit", function(even
     let address = document.getElementById("address");
     let delivery = document.getElementById("delivery");
     let error = document.getElementById("error");
+   
+    if(cart.length == 0){
+
+    error.innerHTML = "Your cart is empty.";
+
+    return;
+
+}
 
     name.style.border = "";
     email.style.border = "";
