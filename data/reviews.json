@@ -7,5 +7,14 @@
         "date": "2025-03-12",
         "title": "Great starter PC",
         "body": "Runs basic games with no problem. Best PC to start off with."
+    },
+    {
+        "id":2,
+        "productId":2,
+        "author": "Lebron J.",
+        "rating": 5,
+        "date": "2013-12-12",
+        "title": "OMEGA BONKERS PC",
+        "body": "Runs THE GAMES SMOOTH. TACO TUUUUUESDAY."
     }
 ]

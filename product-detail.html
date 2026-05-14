@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CheapBuilds || Product List</title>
+    <title>CheapBuilds || Product Information</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/product-list-styles.css">
-    <script src="./js/product-list.js" defer></script> <!-- defer: loads after html is done loading-->
+    <link rel="stylesheet" href="./css/product-information.css">
+    <script src="./js/product-information.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
 </head>
 
 <body>
@@ -37,15 +35,28 @@
         </div>
 
         <a href="./login.html"><i class="fa-solid fa-user fa-2x"></i></a> <!-- the fa-2x changes the icon size, feature from font awesome-->
-
     </header>
 
     <main>
-        <section class="products-list">
-            <h2>Product List</h2>
-            <p>Explore our library of F2P computers, free(somewhat) to play gaming rigs to forced to pay NASA level setups</p>
-            <div id="product-list-grid">
+        <section class="product-information">
+            <div id="product-info">
+                <div class="product-image">
+                    <img id="product-image" src="" alt="">
+                </div>
+                <div class="product-details">
+                    <h1 id="product-name"></h1>
+                    <p id="product-price"></p>
+                    <p id="product-sku"></p>
+                    <p id="product-availability"></p>
+                    <p id="product-description"></p>
+                    <div id="product-specs"></div>
+                    <button id="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
 
+            <div id="review-section">
+                <h2> Customer Reviews </h2>
+                <div id="reviews-list"></div>
             </div>
         </section>
     </main>
@@ -86,6 +97,5 @@
             </div>
         </div>
     </footer>
-    
 </body>
 </html>
