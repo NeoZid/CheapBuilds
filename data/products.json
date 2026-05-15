@@ -59,7 +59,7 @@
     {
         "id": 4,
         "name": "Good Gaming Laptop",
-        "category": "prebuilt-desktop",
+        "category": "gaming-laptop",
         "price": 2000,
         "sku": "caeaa18250hcto01",
         "availability": "In Stock",
@@ -72,7 +72,7 @@
             "storage": "512 GB, M.2, PCIe NVMe, SSD",
             "os": "Windows 11 Home"
         },
-        "featured": true,
+        "featured": false,
         "rating": 3.5
     },
     {
@@ -91,8 +91,47 @@
             "storage": "2TB NVMe SSD",
             "os": "Windows 11 Pro"
         },
-        "featured": true,
+        "featured": false,
         "rating": 4
+    },
+    {
+        "id": 6,
+        "name": "OG Setup",
+        "category": "gaming-laptop",
+        "price": 12.99,
+        "sku": "OLDSKOOL-001",
+        "availability": "In Stock",
+        "image": "images/products/og-laptop.jpeg",
+        "description": "The ultimate sleeper, og, original XP laptop.",
+        "specs": {
+            "cpu": "Intel Pentium M",
+            "gpu": " Integrated Intel Graphics Media Accelerator (GMA).",
+            "ram": "2GB DDR2",
+            "storage": "120GB IDE",
+            "os": "Windows XP"
+        },
+        "featured": true,
+        "rating": 5
+    },
+    {
+        "id": 7,
+        "name": "The Original original",
+        "category": "prebuilt-desktop",
+        "price": 9999.99,
+        "sku": "OLDSKOOL-OG",
+        "availability": "In Stock",
+        "image": "images/products/the-original.jpeg",
+        "description": "The God Father of Computers.",
+        "specs": {
+            "cpu": "Intel 8088 CPU",
+            "gpu": "Color Graphics Adapter (CGA).",
+            "ram": "16 KB",
+            "storage": "5.25-inch floppy drives",
+            "os": "IBM DOS 1.0"
+        },
+        "featured": true,
+        "rating": 5
     }
+    
 
 ]
