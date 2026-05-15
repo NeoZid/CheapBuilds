@@ -30,3 +30,42 @@ function updateCartCount(){
 }
 
 updateCartCount();
+
+const searchInput = document.getElementById('product-search');
+
+searchInput.addEventListener('input', () => {
+    const query = searchInput.value.toLowerCase();
+    if (query.length < 2) {
+        removeSuggestions();
+        return;
+    }
+
+    fetch('./data/products.json')
+        .then(r => r.json())
+        .then(products => {
+            const matches = products.filter(p => 
+                p.name.toLowerCase().includes(query)
+            ).slice(0, 5);
+            showSuggestions(matches);
+        });
+});
+
+function showSuggestions(products) {
+    removeSuggestions();
+    const box = document.createElement('div');
+    box.id = 'suggestions-box';
+    products.forEach(p => {
+        const item = document.createElement('div');
+        item.textContent = p.name;
+        item.addEventListener('click', () => {
+            window.location.href = `./product-detail.html?id=${p.id}`;
+        });
+        box.appendChild(item);
+    });
+    searchInput.parentElement.appendChild(box);
+}
+
+function removeSuggestions() {
+    const existing = document.getElementById('suggestions-box');
+    if (existing) existing.remove();
+}

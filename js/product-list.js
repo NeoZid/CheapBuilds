@@ -3,8 +3,23 @@ let allProducts = [];
 fetch('./data/products.json')
     .then(response => response.json())
     .then(products => {
-        allProducts = products; // save all products
-        renderProducts(allProducts); // render all on load
+        allProducts = products;
+
+        const params = new URLSearchParams(window.location.search);
+        const query = params.get('q');
+        const categoryParam = params.get('category');
+
+        if (categoryParam) {
+            document.getElementById('category-filter').value = categoryParam;
+            applyFilters();
+        } else if (query) {
+            const searched = allProducts.filter(p => 
+                p.name.toLowerCase().includes(query.toLowerCase())
+            );
+            renderProducts(searched);
+        } else {
+            renderProducts(allProducts);
+        }
     });
 
 function renderProducts(products) {
@@ -47,3 +62,4 @@ document.getElementById('price-range').addEventListener('input', () => {
     document.getElementById('price-label').textContent = `Max Price: $${document.getElementById('price-range').value}`;
     applyFilters();
 });
+

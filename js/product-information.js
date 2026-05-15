@@ -74,8 +74,6 @@ fetch('./data/products.json')
         });
     });
 
-
-
 fetch('./data/reviews.json')
     .then(response => response.json())
     .then(reviews => {

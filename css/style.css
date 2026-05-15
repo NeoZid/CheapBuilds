@@ -7,12 +7,18 @@ header {
     padding: 15px 40px;
     align-items: center;
     font-size: 15px;
-    
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header a {
     color: #ffffff;
     text-decoration: none;
+}
+
+header form {
+    position: relative;
 }
 
 nav ul {
@@ -53,6 +59,27 @@ button {
     text-decoration: none;
 }
 
+/* --- SEARCH SUGGESTIONS --- */
+#suggestions-box {
+    position: absolute;
+    background-color: #13132b;
+    border: 1px solid #7c3aed;
+    border-radius: 8px;
+    width: 100%;
+    z-index: 999;
+    top: 100%;
+    left: 0;
+}
+
+#suggestions-box div {
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+}
+
+#suggestions-box div:hover {
+    background-color: #7c3aed;
+}
 
 
 
