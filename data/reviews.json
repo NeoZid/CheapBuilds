@@ -17,4 +17,51 @@
         "title": "OMEGA BONKERS PC",
         "body": "Runs THE GAMES SMOOTH. TACO TUUUUUESDAY."
     }
+    ,
+    {
+        "id":3,
+        "productId":3,
+        "author": "Kobe B.",
+        "rating": 4,
+        "date": "2009-11-12",
+        "title": "NOT MAMBA MENTALITY",
+        "body": "KOBEE."
+    },
+    {
+        "id":4,
+        "productId":4,
+        "author": "Michael J.",
+        "rating": 4,
+        "date": "1991-12-12",
+        "title": "NICE",
+        "body": "HEE-HEE."
+    },
+    {
+        "id":5,
+        "productId":5,
+        "author": "Uvuuuasdjkasdj s.",
+        "rating": 1,
+        "date": "2009-02-01",
+        "title": "NO GOOD",
+        "body": "WHAT IS MY NAME,?."
+    }
+    ,
+    {
+        "id":6,
+        "productId":6,
+        "author": "Tung tung s.",
+        "rating": 3,
+        "date": "2009-07-12",
+        "title": "I PLAY ROBLOX YES",
+        "body": "TUNG TUNG SAUR TUNG TUNG SAUR."
+    },
+    {
+        "id":7,
+        "productId":7,
+        "author": "NINJA B.",
+        "rating": 5,
+        "date": "2019-12-12",
+        "title": "FORTNITE GOD",
+        "body": "IM LITERALLY THE BEST IN FORTNITE CUZ OF THIS, EZ."
+    }
 ]
