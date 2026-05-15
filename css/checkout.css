@@ -71,3 +71,7 @@
 #error {
     color: white;
 }
+
+button:hover{
+    color: green;
+}

@@ -86,4 +86,8 @@ main {
     cursor: pointer;
 }
 
+button:hover {
+    color: green;
+}
+
 

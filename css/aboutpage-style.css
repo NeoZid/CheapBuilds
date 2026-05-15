@@ -17,6 +17,11 @@ header a {
     text-decoration: none;
 }
 
+header a:hover {
+    color: green;
+    text-decoration: none;
+}
+
 header form {
     position: relative;
 }
@@ -32,8 +37,18 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    color: green;
+    text-decoration: none;
+}
+
 button {
     background-color: #7c3aed;
+
+}
+
+button:hover{
+    background-color: green;
 
 }
 
@@ -203,6 +218,11 @@ footer {
 
 footer a {
     color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: green;
     text-decoration: none;
 }
 
