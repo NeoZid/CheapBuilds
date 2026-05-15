@@ -7,19 +7,18 @@ main {
     color: #ffffff;
 }
 
-.products-list h2{
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
+.products-list {
+    color: #ffffff;
+    flex: 1; /* add this so it takes remaining space */
 }
 
 .products-list p {
     font-size: 18px;
 }
 
-#product-list-grid{
+#product-list-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -52,4 +51,34 @@ main {
     border-radius: 8px;
     text-decoration: none;
     margin-top: auto;
+}
+
+.products-page {
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+}
+
+.filter-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 450px;
+    flex-shrink: 0;
+    background-color: #2d0166;
+    padding: 20px;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.filter-bar select, .filter-bar input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0a0a1a;
+    color: white;
+}
+
+#price-label {
+    color: white;
 }

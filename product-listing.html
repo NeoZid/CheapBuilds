@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./css/product-list-styles.css">
     <script src="./js/product-list.js" defer></script> <!-- defer: loads after html is done loading-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <script src="./js/cart.js defer"></script>
     <script src="./js/shared.js" defer></script>
 </head>
 
@@ -41,14 +40,32 @@
 
     </header>
 
-    <main>
-        <section class="products-list">
-            <h2>Product List</h2>
-            <p>Explore our library of F2P computers, free(somewhat) to play gaming rigs to forced to pay NASA level setups</p>
-            <div id="product-list-grid">
 
+    <main>
+        <div class="products-page">
+            <section class="products-list">
+                <h2>Product List</h2>
+                <p>Explore our library of F2P computers, free(somewhat) to play gaming rigs to forced to pay NASA level setups</p>
+                <div id="product-list-grid"></div>
+            </section>
+
+        <div class="filter-bar">
+            <select id="sort-select">
+                <option value="">Sort By</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+            </select>
+
+            <select id="category-filter">
+                <option value="">All Categories</option>
+                <option value="prebuilt-desktop">Pre-built Desktops</option>
+                <option value="gaming-laptop">Gaming Laptops</option>
+            </select>
+
+            <input type="range" id="price-range" min="0" max="10000" value="10000">
+            <label id="price-label">Max Price: $10000</label>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>

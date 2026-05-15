@@ -13,7 +13,7 @@ function readCookie(name) {
     const found = cookies.find(c => c.startsWith(name + '='));
 
     if (found) {
-        const value = found.split('=')[1]; // split the data, becomes key=value pair again
+        const value = found.substring(found.indexOf('=') + 1); // split the data, becomes key=value pair again
         return JSON.parse(value); // we parse and read the cookie
     } else {
         return [];
