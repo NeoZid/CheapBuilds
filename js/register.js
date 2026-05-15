@@ -19,6 +19,7 @@ document.getElementById('register-form').addEventListener('submit', async (e) =>
         document.getElementById('email').value = "";
         document.getElementById('password1').value = "";
         document.getElementById('password2').value = "";
+        alert("Registered!");
     }
 
 });
