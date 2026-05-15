@@ -1,3 +1,25 @@
+function readCookie(name) {
+    // we put the cookies into a variable by splitting ; = we get an array of cookies doing so 
+    const cookies = document.cookie.split('; ');
+
+    // find the cookies that starts with "cart="
+    const found = cookies.find(c => c.startsWith(name + '='));
+
+    if (found) {
+        const value = found.split('=')[1]; // split the data, becomes key=value pair again
+        return JSON.parse(value); // we parse and read the cookie
+    } else {
+        return [];
+    }
+}
+
+
+const user = readCookie('user');
+if (!user || !user.token) {
+    alert('Must be logged in to see cart');
+    window.location.href='login.html';
+} 
+
 let cartSummary = document.getElementById("cartSummary");
 
 let total = 0;
@@ -9,7 +31,7 @@ let cart = [];
 
 if(cartCookie){
 
-     cart = JSON.parse(cartCookie.split("=")[1]);
+     cart = JSON.parse(cartCookie.substring(cartCookie.indexOf('=') + 1));
 
 
     for(let i = 0; i < cart.length; i++){
@@ -20,7 +42,15 @@ if(cartCookie){
 
     }
 
-    cartSummary.innerHTML += "<h3>Total: $" + total.toFixed(2) + "</h3>";
+
+    const TAX_RATE = 0.15;
+    const tax = total * TAX_RATE;
+    const grandTotal = total + tax;
+        cartSummary.innerHTML += `
+            <p>Subtotal: $${total.toFixed(2)}</p>
+            <p>Tax (15%): $${tax.toFixed(2)}</p>
+            <h3>Total: $${grandTotal.toFixed(2)}</h3>
+    `;
 
 }
 document.getElementById("checkoutForm").addEventListener("submit", function(event){

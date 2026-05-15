@@ -30,28 +30,41 @@ if (!user || !user.token) {
 
 updateCartCount();
 
+// restriction for cart when not logged in
+
+
 const cart = readCookie('cart');
 const cartItems = document.getElementById('cart-items');
+// subtotal with tax rate
 let subtotal = 0;
+const TAX_RATE = 0.15;
 
 // cart empty = display empty msg
 if (cart.length==0) {
     cartItems.innerHTML= '<p> Cart is empty </p>';
 } else {
     cart.forEach((item, index) => {
-        subtotal += item.price;
+        subtotal += item.price * (item.quantity || 1);
         cartItems.innerHTML += `
                 <div class="item-info">
                     <img src="${item.image}" alt="${item.name}">
                     <div class="item-text">
                         <h3>${item.name}</h3>
                         <h3>$${item.price}</h3>
+                        <div class="quantity-selector">
+                            <button onclick="changeQuantity(${index}, -1)">-</button>
+                            <span>${item.quantity || 1}</span>
+                            <button onclick="changeQuantity(${index}, 1)">+</button>
+                        </div>
                         <button class="remove-btn" onclick="removeItem(${index})">Remove</button>    
                     </div>
                 </div>                
         `;
     });
 }
+
+const tax = subtotal * TAX_RATE;
+const total = subtotal + tax;
 
 
 function removeItem(index) {
@@ -70,6 +83,15 @@ function updateCartCount(){
     }
 }
 
+function changeQuantity(index, change) {
+    const cart = readCookie('cart');
+    cart[index].quantity += change;
+    if (cart[index].quantity < 1) cart[index].quantity = 1;
+    saveCookie('cart', cart);
+    location.reload();
+}
 
 
 document.getElementById('cart-subtotal').textContent = `$${subtotal.toFixed(2)}`; // toFixed always makes it a decimal
+document.getElementById('cart-tax').textContent = `$${tax.toFixed(2)}`;
+document.getElementById('cart-total').textContent = `$${total.toFixed(2)}`;
