@@ -125,6 +125,16 @@ body {
     margin-top: 20px;
 }
 
+.hero a:hover {
+    background-color: green;
+    color: #7c3aed;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
 main {
     flex: 1;
     
