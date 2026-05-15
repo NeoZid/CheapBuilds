@@ -25,7 +25,7 @@
         "price": 4200.99,
         "sku": "CB-DSK-005",
         "availability": "In Stock",
-        "image": "images/products/not-so-cheap.jpg",
+        "image": "images/products/desktop-cat-razer-r1-edition_1920x700.webp",
         "description": "The not so cheap computer build you're looking for, idk what ur doing here but here it is.",
         "specs": {
             "cpu": "Intel Core Ultra 7 265KF",
@@ -36,6 +36,63 @@
         },
         "featured": true,
         "rating": 4.1
+    },
+    {
+        "id": 3,
+        "name": "Affordable PC",
+        "category": "prebuilt-desktop",
+        "price": 1199.99,
+        "sku": "CB-DSK-002",
+        "availability": "Sold out",
+        "image": "images/products/gaming_pc_r7_7800x3d_3.webp",
+        "description": "The affordable gaming rig, for any gamer.",
+        "specs": {
+            "cpu": "AMD Ryzen 9 5950x 16-Core",
+            "gpu": "NVIDIA RTX 3080 TI 12GB)",
+            "ram": "32GB DDR4",
+            "storage": "1TB SSD",
+            "os": "Windows 11 Home"
+        },
+        "featured": false,
+        "rating": 4.5
+    },
+    {
+        "id": 4,
+        "name": "Good Gaming Laptop",
+        "category": "prebuilt-desktop",
+        "price": 2000,
+        "sku": "caeaa18250hcto01",
+        "availability": "In Stock",
+        "image": "images/products/alienware-gaming-laptop.webp",
+        "description": "Good gaming laptop, but on the higher end",
+        "specs": {
+            "cpu": "Intel® Core™ 7 Processor (Series 2) 240H (24MB cache, 10 cores, 1.80 to 5.20 GHz P-Core)",
+            "gpu": "NVIDIA® GeForce RTX™ 5050, 8 GB GDDR7",
+            "ram": "16GB, 2x8GB, DDR5, 5600 MT/s (5200 MT/s with Intel Core 5 CPU)",
+            "storage": "512 GB, M.2, PCIe NVMe, SSD",
+            "os": "Windows 11 Home"
+        },
+        "featured": true,
+        "rating": 3.5
+    },
+    {
+        "id": 5,
+        "name": "Refurbished Gaming PC",
+        "category": "prebuilt-desktop",
+        "price": 1700,
+        "sku": "CS-9020051-NA",
+        "availability": "In Stock",
+        "image": "images/products/04gxwrzc8nfsgnzalztemwc-27-hero-image-gallery.webp",
+        "description": "Ultimate prebuilt of its generation.",
+        "specs": {
+            "cpu": "Intel Core i9-12900k",
+            "gpu": "NVIDIA GeForce RTX 3080",
+            "ram": "2x16GB DDR5-4800",
+            "storage": "2TB NVMe SSD",
+            "os": "Windows 11 Pro"
+        },
+        "featured": true,
+        "rating": 4
     }
 
 ]
