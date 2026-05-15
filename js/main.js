@@ -10,7 +10,9 @@ fetch('./data/products.json')
                 <div class="product-card">
                     <img src="${product.image}" alt="${product.name}">
                     <h3>${product.name}</h3>
+                    <p>
                     <p>$${product.price}</p>
+                    <p>${product.description}</p>
                     <a href="./product-detail.html?id=${product.id}">View Product</a>
                 </div>
                 `;
